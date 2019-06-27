@@ -1,0 +1,39 @@
+@import '../../assets/variables.scss';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: map-get($palette, primary );
+  
+  &-right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  &-left {
+    a {
+      padding: 2rem 0.4rem 2rem 2rem;
+      text-decoration: none;
+      list-style: none;
+      color: white
+    }
+    .logo {
+      font-size: 1.5rem;
+      margin-right: 15rem 
+    }
+    
+  }
+
+
+  .menu-icon {
+    font-size: 1.4rem;
+    font-weight: 100;
+    cursor: pointer;
+    color: white;
+  }
+}
