@@ -7,7 +7,7 @@ class Home extends React.Component<HomeState, HomeProp> {
   render() {
     return (
       <div className="home">
-        <p className="label">Dashboard</p>
+        <p className="label">Analytics</p>
       </div>
     );
   }
