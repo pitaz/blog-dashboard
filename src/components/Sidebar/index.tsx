@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faServer, 
   faHome, 
@@ -10,7 +10,7 @@ import {
   faUser, 
   faUsers, 
   faCog, 
-  faSignOutAlt} from '@fortawesome/free-solid-svg-icons'
+  faSignOutAlt} from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.scss';
 
 const Sidebar = () => (
@@ -28,8 +28,7 @@ const Sidebar = () => (
       <span className="menu-icon"><Link to="/posts"><FontAwesomeIcon icon={faFile} /> Posts</Link></span>
       <span className="menu-icon"><Link to="/videos"><FontAwesomeIcon icon={faVideo} /> Videos</Link></span>
       <span className="menu-icon"><FontAwesomeIcon icon={faPaperPlane} /> Push notification</span>
-      <span className="menu-icon"><FontAwesomeIcon icon={faUser} /> Authors</span>
-      <span className="menu-icon"><FontAwesomeIcon icon={faUsers} /> users</span>
+      <span className="menu-icon"><Link to="/users"><FontAwesomeIcon icon={faUsers} /> Users</Link></span>
       <span className="menu-icon"><FontAwesomeIcon icon={faCog} /> Settings</span>
       <span className="menu-icon"><FontAwesomeIcon icon={faSignOutAlt} /> Logout</span>
     
