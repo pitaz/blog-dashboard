@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faServer, 
@@ -22,8 +23,8 @@ const Sidebar = () => (
       </span>
     </div>
     <div className="sidebar-options">
-      <span className="menu-icon"><FontAwesomeIcon icon={faHome} /> Analytics</span>
-      <span className="menu-icon"><FontAwesomeIcon icon={faServer} /> Categories</span>
+      <span className="menu-icon"><Link to="/"><FontAwesomeIcon icon={faHome} /> Analytics</Link></span>
+      <span className="menu-icon"> <Link to="/categories"><FontAwesomeIcon icon={faServer} /> Categories</Link> </span>
       <span className="menu-icon"><FontAwesomeIcon icon={faFile} /> Posts</span>
       <span className="menu-icon"><FontAwesomeIcon icon={faVideo} /> Videos</span>
       <span className="menu-icon"><FontAwesomeIcon icon={faPaperPlane} /> Push notification</span>
