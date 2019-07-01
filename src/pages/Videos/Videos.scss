@@ -1,0 +1,71 @@
+@import '../../assets/variables.scss';
+.videos {
+  margin: 20px 20px 0 350px;
+  font-family: 'CaviarDreams';
+
+  .label {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'CaviarDreams';
+  }
+
+  .top-bar {
+    margin: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+      background-color: black;
+      color: $white;
+      border-radius: 18px;
+      padding: 4px 22px;
+    }
+
+
+    .search { 
+      position: relative;
+      padding: 7px;
+     }
+    .search input { 
+      margin: 0 0 0 10px;
+      text-indent: 10px;
+      display: inline-block;
+      border-left: none;
+      border-right: none; 
+      border-top: none;  
+      border-bottom: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .search .fa-search { 
+      position: absolute;
+      top: 15px;
+      left: 0;
+      font-size: 15px;
+    }
+  }
+
+  .category-table {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 10px 0;
+    border: 1px solid map-get($grey, 200);
+
+    .table-header{
+      background-color: map-get($palette, primary);
+      color: $white;
+    }
+
+    .table-header, .table-row {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(50px, auto);
+      padding: 10px 10px 0;
+    }
+    .table-row:nth-child(odd) {
+      background-color: map-get($grey, 200 );
+    }
+  }
+}
