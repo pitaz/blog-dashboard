@@ -26,7 +26,7 @@ const Sidebar = () => (
       <span className="menu-icon"><Link to="/"><FontAwesomeIcon icon={faHome} /> Analytics</Link></span>
       <span className="menu-icon"><Link to="/categories"><FontAwesomeIcon icon={faServer} /> Categories</Link> </span>
       <span className="menu-icon"><Link to="/posts"><FontAwesomeIcon icon={faFile} /> Posts</Link></span>
-      <span className="menu-icon"><FontAwesomeIcon icon={faVideo} /> Videos</span>
+      <span className="menu-icon"><Link to="/videos"><FontAwesomeIcon icon={faVideo} /> Videos</Link></span>
       <span className="menu-icon"><FontAwesomeIcon icon={faPaperPlane} /> Push notification</span>
       <span className="menu-icon"><FontAwesomeIcon icon={faUser} /> Authors</span>
       <span className="menu-icon"><FontAwesomeIcon icon={faUsers} /> users</span>
