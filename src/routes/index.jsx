@@ -7,6 +7,7 @@ import Categories from "pages/Categories";
 import Posts from "pages/Posts";
 import Videos from "pages/Videos";
 import Users from "pages/Users";
+import Settings from "pages/Settings";
 
 
 
@@ -20,6 +21,7 @@ const Routes = () => (
     <Route exact path='/posts' component={Posts} />
     <Route exact path='/videos' component={Videos} />
     <Route exact path='/users' component={Users} />
+    <Route exact path='/settings' component={Settings} />
   </Switch>
 </div>
 );

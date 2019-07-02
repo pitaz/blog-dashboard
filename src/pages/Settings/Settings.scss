@@ -1,0 +1,31 @@
+@import '../../assets/globals.scss';
+
+.settings {
+  margin: 20px 20px 0 350px;
+  font-family: 'CaviarDreams';
+
+  .label {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .form-label {
+    margin-top: 10px;
+    font-size: 1.4rem;
+  }
+
+  input {
+    width: 22rem;
+    height: 3rem;
+    margin: 0 10px 10px 0;
+    text-indent: 10px;
+    display: inline-block;
+    border-left: none;
+    border-right: none; 
+    border-top: none;  
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    break-after: column;
+  }
+}
