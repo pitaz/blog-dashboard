@@ -8,6 +8,7 @@ import Posts from "pages/Posts";
 import Videos from "pages/Videos";
 import Users from "pages/Users";
 import Settings from "pages/Settings";
+import PushNotification from "pages/PushNotification";
 
 
 
@@ -22,6 +23,7 @@ const Routes = () => (
     <Route exact path='/videos' component={Videos} />
     <Route exact path='/users' component={Users} />
     <Route exact path='/settings' component={Settings} />
+    <Route exact path='/notification' component={PushNotification} />
   </Switch>
 </div>
 );

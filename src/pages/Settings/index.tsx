@@ -10,7 +10,7 @@ const Settings = () => (
       <input />
       <p>New password</p>
       <input />
-      <p>New password</p>
+      <p>Confirm new password</p>
       <input />
       <br />
       <button>Change password</button>

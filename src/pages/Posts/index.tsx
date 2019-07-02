@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './Posts.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Posts = () => (
   <div className="posts">
@@ -29,8 +31,8 @@ const Posts = () => (
         <div className="data">2018-03-09 06:32:30</div>
         <div className="data">
           <div>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button><FontAwesomeIcon icon={faEdit} /></button>
+            <button><FontAwesomeIcon icon={faTrashAlt} /></button>
           </div>
         </div>
       </div>
@@ -43,8 +45,8 @@ const Posts = () => (
         <div className="data">2018-03-09 06:32:30</div>
         <div className="data">
           <div>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button><FontAwesomeIcon icon={faEdit} /></button>
+            <button><FontAwesomeIcon icon={faTrashAlt} /></button>
           </div>
         </div>
       </div>
@@ -57,8 +59,8 @@ const Posts = () => (
         <div className="data">2018-03-09 06:32:30</div>
         <div className="data">
           <div>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button><FontAwesomeIcon icon={faEdit} /></button>
+            <button><FontAwesomeIcon icon={faTrashAlt} /></button>
           </div>
         </div>
       </div>
